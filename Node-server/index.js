@@ -3,7 +3,7 @@ let app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 const path = require('path');
-const mainfile = path.join(__dirname + '../')
+const mainfile = path.join(__dirname,'../')
 //mainfile will contain all the required file     
 const port = 8000;
 
@@ -17,7 +17,7 @@ app.get("/", function (req, res) {
 const activeusers = {};
 io.on("connection", (socket) => {
     socket.on("new_user_joined", (username) => {
-
+            console.log("new user",username);
     })
 })
 

@@ -27,7 +27,7 @@ io.on("connection", (socket) => {
 
         // for user leave 
         socket.on("disconnect", () => {
-            console.log("User left", username);
+            console.log("User-left", username);
         })
 
     })

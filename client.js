@@ -6,11 +6,6 @@ const messageContainer = document.getElementById('message-box'); // target whole
 
 // User join 
 const username=prompt("Enter your Username");
-socket.emit("new_user_joined",username);  //sending to sever
-                                           // io.on("connection", (socket) => {
-                                            //     socket.on("new_user_joined", (username) => {
-
-                                            //     })
-                                            // })
-                                            //iss code ko send ho gya jo server prr rakha hai 
+socket.emit("new_user_joined",username);     //sending to sever
+                                           
 

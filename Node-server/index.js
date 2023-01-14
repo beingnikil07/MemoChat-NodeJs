@@ -31,7 +31,6 @@ io.on("connection", (socket) => {
 
   //receiving message from client
   socket.on("send", (message) => {
-    //console.log(message);
     //broadcasting the message
     socket.broadcast.emit("recieve", {
       message: message,
